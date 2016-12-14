@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TKGenericSurveyLib.view.components.SurveyInput"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:surveyItems="clr-namespace:TKGenericSurveyLib.model;assembly=TKGenericSurveyLib"
+             d:DataContext="{d:DesignInstance surveyItems:InputItem}">
+    <ContentView.Content>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical">
+            <Label Text="{Binding Label}" HorizontalOptions="Start" />
+            <Entry Text="{Binding SelectedItem, Mode=TwoWay}" HorizontalOptions="End" />
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

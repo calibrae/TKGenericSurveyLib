@@ -1,0 +1,17 @@
+﻿
+
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TKGenericSurveyLib.view.components.SurveyPicker" xmlns:surveyItems="clr-namespace:TKGenericSurveyLib.model;assembly=TKGenericSurveyLib" xmlns:bindablePicker="clr-namespace:JPC.BindablePicker;assembly=JPC.BindablePicker">
+
+
+
+
+
+
+
+    <ContentView.Content>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical">
+            <Label Text="{Binding Label}" HorizontalOptions="Start" />
+            <bindablePicker:BindablePicker ItemsSource="{Binding PickerItems}" SelectedItem="{Binding SelectedPickerItem, Mode=TwoWay}" HorizontalOptions="End" />
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

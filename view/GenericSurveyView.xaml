@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:view="clr-namespace:TKGenericSurveyLib.view;assembly=TKGenericSurveyLib"
+             x:Class="TKGenericSurveyLib.view.GenericSurveyView" VerticalOptions="FillAndExpand"
+             HorizontalOptions="FillAndExpand">
+  <ContentView.BindingContext><view:GenericSurveyMediator/></ContentView.BindingContext>
+    <ContentView.Content>
+      <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
+        <StackLayout.Children> <Binding>Children</Binding></StackLayout.Children>
+      </StackLayout>
+    </ContentView.Content>
+</ContentView>
